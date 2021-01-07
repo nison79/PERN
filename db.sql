@@ -58,8 +58,4 @@ ADD COLUMN places_visits VARCHAR ;
 
 
 
-INSERT INTO users(id, name, email, password,IP, time_in,time_out,places_visits)
-VALUES (1,"george nikoglou","georgenison@gmail.com","123456","127.1.1.1",NOW(),NOW(),"HOME");
-
-
-INSERT INTO users (password) VALUES("george789");
+INSERT INTO users(id,ip,name,time_in,time_out,places_visits,email) VALUES (1,'127.1.1.1','george',NOW(),NOW(),'home','georgenison@gmail.com');
