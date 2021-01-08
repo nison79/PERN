@@ -59,3 +59,8 @@ ADD COLUMN places_visits VARCHAR ;
 
 
 INSERT INTO users(id,ip,name,time_in,time_out,places_visits,email) VALUES (1,'127.1.1.1','george',NOW(),NOW(),'home','georgenison@gmail.com');
+
+
+UPDATE users SET name = 'Alekos' , email='alek@yahoo.com' WHERE id =1;
+
+DELETE FROM users WHERE id = 2;
